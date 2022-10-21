@@ -38,8 +38,9 @@ const blogPosts = [
 ]
 
 const host = 'file:///Users/stefantmilne/Desktop/uw/java-rwd/adopt-a-dog/html200-adopt-a-dog/';
+const gitHost = 'https://ssstefanz.github.io/html200-adopt-a-dog/';
 
-if (window.location.href == host + 'blog.html') {
+if (window.location.href == host + 'blog.html' || window.location.href == gitHost + 'blog.html') {
   //declare variables for text and photo positions
   const headers = document.getElementsByClassName('box4');
   const blogPhotos = document.getElementsByClassName('b-box1');
@@ -76,7 +77,7 @@ if (window.location.href == host + 'blog.html') {
 }
 
 
-if (window.location.href == host + 'checkout.html') {
+if (window.location.href == host + 'checkout.html' || window.location.href == gitHost + 'blog.html') {
   // an alert on the checkout page
   const form = document.querySelector('form');
   const submitButton = document.createElement('input');
