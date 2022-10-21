@@ -358,7 +358,7 @@ input {
 }
 
 .chk {
-  margin: 1em 4em;
+  margin: 1em 9em;
 }
 
 .pu {
@@ -418,7 +418,6 @@ form h4 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
-  /* great way to center on website */
   align-items: center;
   padding: 3em
 }
@@ -451,18 +450,13 @@ footer img {
   min-width: 100px;
 }
 
-/* responsive */
-/*@media screen and (max-width 400px) {
-  header {
-    background-image: url("header-image.jpg"), linear-gradient(#093c60 15%, white);
-    background-size: 100%;
-    position: absolute;
-  }
-}*/
-
 @media screen and (max-width: 576px) {
   .logohed {
     min-width: 10em;
+  }
+
+  .chk {
+    margin: 1em 4em;
   }
 
   nav {
