@@ -77,7 +77,7 @@ if (window.location.href == host + 'blog.html' || window.location.href == gitHos
 }
 
 
-if (window.location.href == host + 'checkout.html' || window.location.href == gitHost + 'blog.html') {
+if (window.location.href == host + 'checkout.html' || window.location.href == gitHost + 'checkout.html') {
   // an alert on the checkout page
   const form = document.querySelector('form');
   const submitButton = document.createElement('input');
