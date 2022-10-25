@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt a Dog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <script src="./info.js"></script>
   </head>
 
   <body>
@@ -33,7 +35,7 @@
     <article class="chk">
       <h3>Checkout</h3>
 
-      <form method="post">
+      <form id="form" method="post">
 
         <label>Name
           <input id="name" type="text" name="contactName">
@@ -90,7 +92,7 @@
         <p>DOG IMGS ETC, TK</p>
 
         <h4>Total Adoption Cost</h4>
-        <p>$###.##</p>
+        <p id="cart-total">$0.00</p>
 
       </form>
     </article>
@@ -107,7 +109,7 @@
         <p>© 2018 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA</p>
       </div>
     </footer>
-    <script src="./info.js"></script>
+
 
   </body>
 </html>
