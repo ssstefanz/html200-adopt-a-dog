@@ -1,0 +1,7 @@
+Testing Notes
+
+I first tested the Adopt-a-Dog site on Safari on my MacBook Air. All iterations looked good in responsive design mode and at various browser sizes. Since I don't have access to a PC, I tested the page in Safari's developer mode "Google Chrome - Windows" and "Microsoft Edge - Windows" settings. The dogs page had oddly large margins when I narrowed the browser. The same thing happened in Chrome and in Firefox. When the browser was extremely narrow in Firefox, the spaces above and below images on the blog page also got very large. Last, I noticed that my jQuery hover effect didn't end when I left the dog tiles in Microsoft Edge.
+
+Next I tested on Safari on my iPhone. Here the dogs and blogs pages had extremely large margins. The same thing happened when I tested the site on chrome on my iPhone.
+
+I discovered that classes for the bodies of both the blog and dogs pages were set to left/right margins of 9em at all sizes. To fix this, I added those classes to different break points with smaller margins so that on small screen widths the tiles would expand properly. I also inverted the order of the three @media screen queries so that the smallest would take precedent. Finally, I shifted the hover over effect on the dog tiles from jQuery to a CSS effect, which fixed the problem with some tiles getting stuck at altered sizes. 

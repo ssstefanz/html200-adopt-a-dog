@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+.box3:hover {
+  transform: scale(1.2);
+}
+
 /* header/nav */
 header {
   min-height: 25em;
@@ -252,12 +256,12 @@ li input  {
 }
 
 /* dogs pg */
-.dogs-body {
+.body-st {
   margin: 2em 9em;
 }
 
 /* blog pg */
-.blog {
+.blog-body {
   margin: 2em 9em;
 }
 
@@ -448,31 +452,35 @@ footer img {
   min-width: 100px;
 }
 
-@media screen and (max-width: 576px) {
-  .logohed {
-    min-width: 10em;
+/* responsive design */
+
+
+
+
+@media screen and (max-width: 992px) {
+  .index-body {
+    margin: auto;
+    width: auto;
   }
 
-  .chk {
-    margin: 1em 4em;
+  .body-st {
+    margin: 2em 3em;
+  }
+
+  .blog-body {
+    margin: 2em 3em;
   }
 
   nav {
-    padding: 1em 2.7em;
-  }
-  nav a {
-    display: block;
+    padding: 1em auto;
   }
 
-  nav span {
-    display: none;
+  .left-section {
+    width: 80%;
   }
 
-  header {
-    min-height: 35em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  .right-section {
+    width: 20%;
   }
 }
 
@@ -495,20 +503,42 @@ footer img {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .index-body {
-    margin: auto;
-    width: auto;
+@media screen and (max-width: 576px) {
+  .logohed {
+    min-width: 10em;
   }
+
+  .chk {
+    margin: 1em 4em;
+  }
+
+  .body-st {
+    margin: 2em 0em;
+  }
+
+  .blog-body {
+    margin: 2em;
+  }
+
+  .h3alt {
+    margin-left: 2em;ß
+  }
+
   nav {
-    padding: 1em auto;
+    padding: 1em 2.7em;
+  }
+  nav a {
+    display: block;
   }
 
-  .left-section {
-    width: 80%;
+  nav span {
+    display: none;
   }
 
-  .right-section {
-    width: 20%;
+  header {
+    min-height: 35em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }

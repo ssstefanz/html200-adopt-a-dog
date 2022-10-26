@@ -23,7 +23,7 @@ $(function() {
     $(this).fadeTo('fast', 1)
   })
 
-  // hover effect for dog tiles - grow
+/*  // hover effect for dog tiles - grow
   $('.box3').mouseenter(function(){
     $(this)
       .height(function(i, height) { return height + 10; })
@@ -32,7 +32,7 @@ $(function() {
     $(this)
       .height(function(i, height) { return height - 10; })
       .width(function(i, width) { return width - 10; });
-  });
+  }); */
 
   // object with blog post content
   const blogPosts = [
