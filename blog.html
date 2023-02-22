@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt a Dog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <script src="./info.js"></script>
   </head>
 
   <body>
@@ -16,7 +18,7 @@
 
         <div class="hed-box">
           <img class="cart" src="images/cart-icon.svg" alt="a shopping cart icon">
-          <p class="cart-pay">$#.##</p> <br>
+          <p class="cart-pay" id="cart-total">$0.00</p> <br>
           <a href="checkout.html" class="c-button">Checkout</a>
         </div>
       </div>
@@ -30,41 +32,23 @@
       </nav>
     </header>
 
-    <section class="blog">
+    <section class="blog-body">
       <h3>Adoptadog Blog</h3>
 
       <article class="blog-grid">
         <div class="blog1">
-          <div class="box1">
-            <img class="blog-img" src="images/blog-1.jpg" alt="A person looks out over the a desert canyon while hugging a dog">
-          </div>
-          <div class="box4">
-            <h4>Traveling With Your Dog</h4>
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
-            <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
-          </div>
+          <div class="b-box1"></div>
+          <div id="box4" class="box4"></div>
         </div>
 
         <div class="blog2">
-          <div class="box1">
-            <img class="blog-img" src="images/blog-2.jpg" alt="Several dogs are on leashes in a city square">
-          </div>
-          <div class="box4">
-            <h4>Traveling With Your Dog</h4>
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
-            <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
-          </div>
+          <div class="b-box1"></div>
+          <div class="box4"></div>
         </div>
 
         <div class="blog3">
-          <div class="box1">
-            <img class="blog-img" src="images/blog-3.jpg" alt="Teach Your Dog To Fetch!">
-          </div>
-          <div class="box4">
-            <h4>Traveling With Your Dog</h4>
-            <p>Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut amet ant fugiatum, utem non reptat.</p>
-            <p>Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
-          </div>
+          <div class="b-box1"></div>
+          <div class="box4"></div>
         </div>
 
       </article>

@@ -1,0 +1,9 @@
+User Persona
+Name: Darnell Doe
+Age: 48
+Occupation: freelance marketing writer
+Hobbies: rollerblading, volunteer work with a Seattle nonprofit connecting dogs with people who need some cheer
+Hardware he uses: iPhone 12 and 13" Mackbook Pro from 2020
+Browsers he uses: iOS 16 Safari and Chrome on MacOS
+Browsing habits: He often looks for dogs while he's on the go or in downtime when he has his phone, so iOS compatibility and ease of use is a must.
+Other notes: He injured his right hand recently, so he need large clickable areas.

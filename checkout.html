@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adopt a Dog</title>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <script src="./info.js"></script>
   </head>
 
   <body>
@@ -16,7 +18,7 @@
 
           <div class="hed-box">
             <img class="cart" src="images/cart-icon.svg" alt="a shopping cart icon">
-            <p class="cart-pay">$#.##</p> <br>
+            <p class="cart-pay" id="cart-total">$0.00</p> <br>
             <a href="checkout.html" class="c-button">Checkout</a>
           </div>
         </div>
@@ -33,23 +35,23 @@
     <article class="chk">
       <h3>Checkout</h3>
 
-      <form method="post">
+      <form id="form" method="post">
 
         <label>Name
-          <input type="text" name="contactName">
+          <input id="name" type="text" name="contactName">
         </label>
 
         <label>Email Address
-          <input type="email" name="contactEmail">
+          <input id="email" type="email" name="contactEmail">
         </label>
 
         <label>Street Address
-          <input type="text" name="contactAddress">
+          <input id="street" type="text" name="contactAddress">
         </label>
 
         <div class="csz">
           <label>City
-            <input class="city" type="text" name="contactCity">
+            <input id="city" class="city" type="text" name="contactCity">
           </label>
 
           <label for="state">State
@@ -61,23 +63,23 @@
           </label>
 
           <label>Zip Code
-            <input class="zip" type="text" name="contactZip">
+            <input id="zip" class="zip" type="text" name="contactZip">
           </label>
         </div>
 
 
-        <fieldset class="checkbox">
+        <fieldset>
           <legend>First Time Adopter?</legend>
           <label>
-            <input type="radio" name="special" value="yes">Yes
+            <input class="checkbox" type="radio" name="special" value="yes">Yes
           </label>
           <label>
-            <input type="radio" name="special" value="no">No
+            <input class="checkbox" type="radio" name="special" value="no">No
           </label>
         </fieldset>
 
         <label for="pickup">Pickup Location
-          <select  class="pu" name="pickup" id="pickup">
+          <select id="pickup" class="pu" name="pickup">
             <option value="null">select location</option>
             <option value="downtown">Downtown</option>
             <option value="fremont">Fremont</option>
@@ -90,9 +92,8 @@
         <p>DOG IMGS ETC, TK</p>
 
         <h4>Total Adoption Cost</h4>
-        <p>$###.##</p>
+        <p id="cart-total">$0.00</p>
 
-        <input class="s-button" type="submit" value="Submit">
       </form>
     </article>
 
@@ -108,6 +109,7 @@
         <p>© 2018 Adoptadog, LLC &nbsp; | &nbsp; Seattle, WA</p>
       </div>
     </footer>
+
 
   </body>
 </html>
